@@ -1,0 +1,73 @@
+#marche-featured {
+    position: relative;
+
+    > [class*="column"] {
+
+        article {
+            display: grid;
+            grid-template-columns: 120px calc(100% - 136px);
+            grid-template-rows: auto;
+            grid-template-areas: "col1 col2row1" "col1 col2row2" "col1 col2row3";
+            justify-content: space-between;
+            margin-bottom: 16px;
+
+
+            .entry-featured-image-url {
+                grid-area: col1;
+                background: #ffffff;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                width: 120px;
+                height: 120px;
+                overflow: hidden;
+                margin: 0;
+                padding: 2px;
+                box-shadow: 0 0 1px 1px rgba(#000000, 0.2);
+
+                img {
+                    background-size: cover;
+                    position: relative;
+                }
+            }
+
+            > * {
+                grid-column: 2;
+                width: calc(100% - 120px);
+            }
+
+            .entry-title {
+                grid-area: col2row1;
+                display: block;
+                padding-bottom: 0;
+            }
+
+            .post-meta {
+                grid-area: col2row2;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row wrap;
+                align-items: center;
+                color: transparent !important;
+
+                .published {
+                    order: 2;
+                    color: #777777;
+                }
+
+                a {
+                    order: 1;
+                    position: absolute;
+                }
+            }
+
+            .post-content {
+                grid-area: col2row3;
+                display: block;
+            }
+        }
+    }
+
+}

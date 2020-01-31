@@ -1,0 +1,28 @@
+@mixin breakpoint($point) {
+    /* default mediaquery */
+    @if $point == lg {
+        @media (min-width:1920px) { @content; }
+    }
+    @else if $point == md {
+        @media (max-width:1200px) { @content; }
+    }    
+    @else if $point == sm {
+        @media (max-width: 992px) { @content; }
+    }   
+    @else if $point == xs {
+        @media (max-width: 767px) { @content; }
+    }
+}
+
+
+$default-legacy-ie: 7 8 9 !default;
+@mixin legacy-ie($versions: $default-legacy-ie) {
+    $sel: ();
+    @each $v in $versions {
+        $sel: append($sel, unquote('.ie#{$v} &'), comma);
+    }
+
+    #{$sel} {
+        @content;
+    }
+}

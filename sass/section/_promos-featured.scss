@@ -1,0 +1,78 @@
+#promos-featured {
+    min-height: auto !important;
+    margin-bottom: 0;
+
+    div {
+        min-height: auto;
+        margin-bottom: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+
+        article {
+
+            width: calc(33% - 16px);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+
+            .entry-featured-image-url {
+                background: #ccc;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                width: 100%;
+                height: 120px;
+                overflow: hidden;
+                margin-bottom: 12px;
+
+                img {
+                    object-fit: cover;
+                    position: relative;
+                }
+            }
+
+            .entry-title {
+                display: block;
+                position: relative;
+                padding: 0 8px;
+                min-height: 2em;
+                margin-bottom: 8px;
+            }
+
+            .post-meta {
+                padding: 0 8px;
+                display: flex;
+                justify-content: space-between;
+                flex-flow: row wrap;
+                align-items: center;
+                color: transparent !important;
+                text-transform: uppercase;
+
+                .published {
+                    order: 2;
+                    color: #777777;
+                }
+
+                a {
+                    order: 1;
+                    position: absolute;
+                    left: 8px;
+                }
+            }
+
+            .post-content {
+                padding: 0 8px;
+                display: block;
+            }
+        }
+    }
+
+
+}

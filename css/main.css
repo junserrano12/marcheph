@@ -1,0 +1,319 @@
+/* Fonts */
+/* Colors */
+/* Base Color */
+/* Font Size */
+/* spacing */
+/* default mediaquery */
+/* wordpress core */
+.alignnone {
+  margin: 0;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+.alignright {
+  float: right;
+  margin: 0;
+}
+.alignleft {
+  float: left;
+  margin: 0;
+}
+a img.alignnone {
+  margin: 0;
+}
+a img.alignright {
+  float: right;
+  margin: 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone, .wp-caption.alignleft, .wp-caption.alignright {
+  margin: 0;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  position: relative;
+}
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+.sticky {
+  position: fixed;
+}
+.gallery-caption {
+  position: relative;
+}
+.bypostauthor {
+  position: relative;
+}
+.edit-link {
+  position: fixed;
+  bottom: 10%;
+  left: 10px;
+  background: #777;
+  border: 1px solid #333;
+  z-index: 9999;
+  padding: 3px 10px;
+  opacity: 0.5;
+}
+.edit-link:hover {
+  opacity: 0.8;
+}
+.edit-link a {
+  color: #fff;
+  font-size: 14px;
+}
+.edit-link a:hover, .edit-link a:active, .edit-link a:visited, .edit-link a:focus {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+.comment-form-comment label {
+  display: block;
+}
+.comment-metadata .edit-link {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  opacity: 1;
+}
+.comment-metadata .edit-link a {
+  color: inherit;
+  font-size: inherit;
+}
+#whats-new {
+  position: relative;
+}
+#whats-new article {
+  background: #fff;
+  padding-bottom: 8px;
+  display: flex;
+  flex-flow: column wrap;
+}
+#whats-new article .entry-featured-image-url {
+  order: 0;
+  background: #ccc;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+#whats-new article .entry-featured-image-url img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  max-width: inherit;
+  height: auto;
+  width: auto;
+}
+#whats-new article .entry-title {
+  order: 2;
+  display: block;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+#whats-new article .post-meta {
+  order: 1;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  color: transparent !important;
+  text-transform: uppercase;
+}
+#whats-new article .post-meta .published {
+  order: 2;
+  color: #777;
+}
+#whats-new article .post-meta a {
+  order: 1;
+  position: absolute;
+  left: 16px;
+}
+#whats-new article .post-content {
+  order: 3;
+  padding: 0 16px;
+  display: block;
+}
+#marche-featured {
+  position: relative;
+}
+#marche-featured > [class*="column"] article {
+  display: grid;
+  grid-template-columns: 120px calc(100% - 136px);
+  grid-template-rows: auto;
+  grid-template-areas: "col1 col2row1" "col1 col2row2" "col1 col2row3";
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+#marche-featured > [class*="column"] article .entry-featured-image-url {
+  grid-area: col1;
+  background: #fff;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin: 0;
+  padding: 2px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+#marche-featured > [class*="column"] article .entry-featured-image-url img {
+  background-size: cover;
+  position: relative;
+}
+#marche-featured > [class*="column"] article > * {
+  grid-column: 2;
+  width: calc(100% - 120px);
+}
+#marche-featured > [class*="column"] article .entry-title {
+  grid-area: col2row1;
+  display: block;
+  padding-bottom: 0;
+}
+#marche-featured > [class*="column"] article .post-meta {
+  grid-area: col2row2;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  color: transparent !important;
+}
+#marche-featured > [class*="column"] article .post-meta .published {
+  order: 2;
+  color: #777;
+}
+#marche-featured > [class*="column"] article .post-meta a {
+  order: 1;
+  position: absolute;
+}
+#marche-featured > [class*="column"] article .post-content {
+  grid-area: col2row3;
+  display: block;
+}
+#promos-featured {
+  min-height: auto !important;
+  margin-bottom: 0;
+}
+#promos-featured div {
+  min-height: auto;
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#promos-featured div article {
+  width: calc(33% - 16px);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+#promos-featured div article .entry-featured-image-url {
+  background: #ccc;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+#promos-featured div article .entry-featured-image-url img {
+  background-size: cover;
+  position: relative;
+}
+#promos-featured div article .entry-title {
+  display: block;
+  position: relative;
+  padding: 0 8px;
+  min-height: 2em;
+  margin-bottom: 8px;
+}
+#promos-featured div article .post-meta {
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  color: transparent !important;
+  text-transform: uppercase;
+}
+#promos-featured div article .post-meta .published {
+  order: 2;
+  color: #777;
+}
+#promos-featured div article .post-meta a {
+  order: 1;
+  position: absolute;
+  left: 8px;
+}
+#promos-featured div article .post-content {
+  padding: 0 8px;
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */

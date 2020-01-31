@@ -1,0 +1,22 @@
+@mixin button($grfrom: #ffe042, $grto: #ff931f) {
+  cursor: pointer;
+  padding: 6px 10px;
+  background: $grfrom;
+  background: -moz-linear-gradient(top, $grfrom 1%, $grto 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, $grfrom), color-stop(100%, $grto));
+  background: -webkit-linear-gradient(top, $grfrom 1%, $grto 100%);
+  background: -o-linear-gradient(top, $grfrom 1%, $grto 100%);
+  background: -ms-linear-gradient(top, $grfrom 1%, $grto 100%);
+  background: linear-gradient(to bottom, $grfrom 1%, $grto 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$grfrom', endColorstr='$grto',GradientType=0 );
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0px 1px 3px rgba($black, 0.5), inset 0px 0px 1px $white;
+     -moz-box-shadow: 0px 1px 3px rgba($black, 0.5), inset 0px 0px 1px $white;
+          box-shadow: 0px 1px 3px rgba($black, 0.5), inset 0px 0px 1px $white;
+
+  @include legacy-ie {
+    filter: none;
+  }
+}
